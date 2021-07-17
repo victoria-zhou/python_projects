@@ -37,4 +37,4 @@ def main(args):
 if __name__ == '__main__':
     with open('./mock_passwords.txt') as file:
         mock_passwords = [line.rstrip() for line in file.readlines()]
-        main(mock_passwords)
+        sys.exit(main(mock_passwords))
